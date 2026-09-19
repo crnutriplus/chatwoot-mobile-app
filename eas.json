@@ -22,18 +22,15 @@
     },
     "production": {
       "environment": "production",
+      "distribution": "internal",
       "env": {
         "NODE_ENV": "production",
         "SENTRY_DISABLE_AUTO_UPLOAD": "true"
       },
-      "autoIncrement": true
-    }
-  },
-  "submit": {
-    "production": {
       "android": {
-        "track": "internal" // (enum: production, beta, alpha, internal)
-      }
+        "buildType": "apk"
+      },
+      "autoIncrement": true
     }
   }
 }
